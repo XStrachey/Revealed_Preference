@@ -15,26 +15,26 @@ This project provides a Python-based toolkit for analyzing revealed preference t
 
 ## Functions Overview
 
-### `check_revealed_preference(price_a, quantity_a, price_b, quantity_b)`
+`check_revealed_preference(price_a, quantity_a, price_b, quantity_b)`
 - Checks if two consumption bundles satisfy WARP.
 - **Parameters**:
   - `price_a`, `price_b`: Price vectors of two consumption bundles.
   - `quantity_a`, `quantity_b`: Quantity vectors of two consumption bundles.
 - **Returns**: `True` if WARP is satisfied, `False` otherwise.
 
-### `check_strict_direct_preference(price_a, quantity_a, price_b, quantity_b)`
+`check_strict_direct_preference(price_a, quantity_a, price_b, quantity_b)`
 - Checks for strict direct revealed preferences between two bundles.
 
-### `detect_cycle(preference_graph)`
+`detect_cycle(preference_graph)`
 - Detects cycles in a preference graph, which can indicate SARP or GARP violations.
 
-### `check_warp_violation(quantity_list, price_list)`
+`check_warp_violation(quantity_list, price_list)`
 - Detects WARP violations across multiple consumption bundles.
 
-### `check_sarp_violation(quantity_list, price_list)`
+`check_sarp_violation(quantity_list, price_list)`
 - Detects SARP violations, including cycles in preference graphs.
 
-### `check_garp_violation(quantity_list, price_list)`
+`check_garp_violation(quantity_list, price_list)`
 - Detects GARP violations and evaluates strict preferences in addition to basic WARP violations.
 
 ## Installation
